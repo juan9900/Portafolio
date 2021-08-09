@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+html,
+body {
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 6em;
+  margin-bottom: 0;
+  color: #9647c4;
+}
+
+h2 {
+  font-size: 4em;
+  color: #813ca8;
+}
+
+h3 {
+  font-size: 2.7em;
+  color: #000;
+}
+
+h4 {
+  font-size: 2em;
+  color: #000;
+}
+nav a {
+  font-size: 1.4em;
+  margin: 0 10px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.959);
+  box-shadow: 0 1px 2px #efefef;
+  z-index: 9999;
+  box-shadow: 0 4px 6px -6px black;
+  padding-top: 20px;
+  display: block;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+}
+
+.titulo-seccion {
+  text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 10px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+/* SECCION 1 (BIENVENIDA) */
+.bienvenida {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 150px 15% 0 15%;
+}
+
+.bienvenida-izquierda {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+}
+
+.bienvenida-derecha img {
+  width: 100%;
+}
+
+.bienvenida-botones {
+  margin-top: 15px;
+}
+
+.bienvenida h3 {
+  color: #242424;
+}
+
+.btn-conoceme {
+  border: 2px solid #9647c4;
+  color: #9647c4;
+  font-size: 1.1em;
+  margin-right: 10px;
+}
+
+.btn-trabajos {
+  background-color: #9647c4;
+  color: #fff;
+  border: 2px solid #9647c4;
+  font-size: 1.1em;
+}
+
+.btn-conoceme:hover {
+  border: 2px solid #683088;
+  color: #683088;
+}
+
+.btn-trabajos:hover {
+  background-color: #683088;
+  border: 2px solid #683088;
+  color: #fff;
+}
+
+/* SECCION 2 (SOBRE MI) */
+.s2 {
+  background-color: #853ead;
+}
+
+.sobre-mi p {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.titulo-seccion h2 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+.sobre-mi h4 {
+  margin-top: 5%;
+  text-align: center;
+  color: #fff;
+}
+
+.lenguajes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.lenguaje img {
+  width: 60%;
+}
+
+.lenguaje {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 20px 50px 20px;
+  display: block;
+}
+
+.custom-shape-divider-top-1628538948 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1628538948 svg {
+  position: relative;
+  display: block;
+  width: calc(211% + 1.3px);
+  height: 123px;
+}
+
+.custom-shape-divider-top-1628538948 .shape-fill {
+  fill: #ffffff;
+}
+
+.custom-shape-divider-top-1628539384 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1628539384 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 64px;
+}
+
+.custom-shape-divider-top-1628539384 .shape-fill {
+  fill: #853ead;
+}
+
+/* SECCION 3 (TRABAJOS) */
+.trabajos h2 {
+  text-align: center;
+  color: #853ead;
+}
+
+.paginas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pagina {
+  margin: 10px 20px 10px 20px 10px;
+  flex: 1 0 25%;
+  text-align: center;
+  margin: 10px;
+  display: block;
+  border-radius: 10px;
+}
+
+.pagina:hover {
+  cursor: pointer;
+}
+
+.pagina h4 {
+  margin-top: 10px;
+}
+
+.pagina-imagen {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.pagina img {
+  width: 100%;
+  transition: 0.6s;
+  opacity: 0.95;
+}
+
+.pagina img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* SECCION 4 (REDES SOCIALES) */
+.s4 h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.redes {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.red {
+  display: inline;
+}
+
+.cuadro {
+  width: 70px;
+  height: 70px;
+  background-color: red;
+}
