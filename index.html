@@ -33,18 +33,20 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+                <a class="nav-link" aria-current="page" href="#s1">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#que_son">Sobre mí</a>
+                <a class="nav-link" href="#s2">Sobre mí</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#guardan">Trabajos</a>
+                <a class="nav-link" href="#s3">Trabajos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#populares">Redes Sociales</a>
+                <a class="nav-link" href="#s4">Redes Sociales</a>
               </li>
-
+              <li class="nav-item">
+                <a class="nav-link" href="#s5">Contacto</a>
+              </li>
               
             </ul>
           </div>
@@ -53,14 +55,14 @@
       </nav>
     </header>
 
-    <section class="s1 container">
+    <section class="s1 container" id="s1">
       <div class="bienvenida">
         <div class="bienvenida-izquierda">
           <h1>Juan Lauretta</h1>
           <h3>Desarrollador web Front-end.</h3>
           <div class="bienvenida-botones">
-            <a class="btn btn-conoceme" href="#sobre-mi">Conóceme</a>
-            <a class="btn btn-trabajos" href="trabajos">Mis Trabajos</a>
+            <a class="btn btn-conoceme" href="#s2">Conóceme</a>
+            <a class="btn btn-trabajos" href="#s3">Mis Trabajos</a>
           </div>
           
         </div>
@@ -71,7 +73,7 @@
     </section>
 
     
-    <section class="s2 ">
+    <section class="s2 " id="s2">
       <div class="custom-shape-divider-top-1628538948">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
@@ -87,11 +89,16 @@
 
         <h4>Lenguajes que manejo:</h4>
         <div class="lenguajes">
-          <div class="lenguaje"><img src="resources/img/logo-html.png" alt="logo html"></div>
-          <div class="lenguaje"><img src="resources/img/logo-css.png" alt="logo css"></div>
-          <div class="lenguaje"><img src="resources/img/logo-js.png" alt="logo javascript"></div>
-          <div class="lenguaje"><img src="resources/img/logo-java.png" alt="logo java"></div>
-          <div class="lenguaje"><img src="resources/img/logo-sql.png" alt="logo sql"></div>
+          <div class="lenguaje"><img src="resources/img/logo-html.png" alt="logo html" class="logo-lenguaje">
+          <h4 class="lenguaje-texto">HTML</h4></div>
+          <div class="lenguaje"><img src="resources/img/logo-css.png" alt="logo css" class="logo-lenguaje">
+          <h4 class="lenguaje-texto">CSS</h4></div>
+          <div class="lenguaje"><img src="resources/img/logo-js.png" alt="logo javascript" class="logo-lenguaje">
+          <h4 class="lenguaje-texto">Javascript</h4></div>
+          <div class="lenguaje"><img src="resources/img/logo-java.png" alt="logo java" class="logo-lenguaje">
+          <h4 class="lenguaje-texto">Java</h4></div>
+          <div class="lenguaje"><img src="resources/img/logo-sql.png" alt="logo sql" class="logo-lenguaje">
+          <h4 class="lenguaje-texto">SQL</h4></div>
         </div>
       </div>
       
@@ -104,7 +111,7 @@
       </svg>
     </div>
 
-    <section class="s3 trabajos">
+    <section class="s3 trabajos" id="s3">
       <div class="container">
         <h2>Trabajos</h2>
         <div class="paginas">
@@ -153,15 +160,91 @@
       </div>
     </section>
 
-    <section class="s4">
+    <section class="s4" id="s4">
       <div class="container">
         <h2>Redes Sociales</h2>
         <div class="redes">
-          
-        
+          <div class="red">
+            <a href="https://www.instagram.com/juan_lauretta/" target="_blank"><i class="fab fa-instagram"></i><h4>Instagram</h4></a>
+          </div>
+          <div class="red">
+            <a href="https://ve.linkedin.com/in/juan-lauretta-machado-5043871b7" target="_blank"><i class="fab fa-linkedin"></i><h4>Linked-In</h4></a>
+            
+          </div>
+        </div>
       </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
+    <section class="s5" id="s5">
+      <h2>¿Quieres que trabajemos juntos?</h2>
+      <div class="contacto">
+        <form action="#">
+          <div class="grupo">
+            <div class="vertical">
+              <label for="Nombres">Nombre</label>
+              <input
+                type="text"
+                name="Nombres"
+                id="Nombres"
+                placeholder="Ingresa tu nombre"
+              />
+            </div>
+            <div class="vertical">
+              <label for="Apellido">Apellido</label>
+              <input
+                type="text"
+                name="Apellido"
+                id="Apellido"
+                placeholder="Ingresa tu apellido"
+              />
+            </div>
+          </div>
+        
+
+          <div class="grupo">
+            <div class="vertical">
+              <label for="Email">Email</label>
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                placeholder="Ingresa tu email"
+              />
+            </div>
+            
+          </div>
+
+          <div class="grupo">
+            <div class="vertical">
+              <label for="Mensaje">Mensaje</label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="6"
+                placeholder="Ingresa tu mensaje"
+              ></textarea>
+            </div>
+          </div>
+          
+          <div class="enviar">
+            <input type="submit" value="Enviar" />
+          </div>
+          
+        </form>
+      </div>
+    </section>
+    
+      <footer >
+          <div class="copyright">
+            &copy; 2021. ALL RIGHTS RESERVERD JUAN LAURETTA
+          </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/dd425220c4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="resources/js/scripts.js"></script>
+    
   </body>
 </html>

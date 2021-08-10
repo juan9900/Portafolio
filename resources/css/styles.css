@@ -50,7 +50,8 @@ a:link,
 a:visited {
   text-decoration: none;
 }
-p {
+p,
+label {
   font-family: "Roboto", sans-serif;
 }
 
@@ -145,6 +146,23 @@ img {
   color: #fff;
 }
 
+@media only screen and (max-width: 480px) {
+  .s1 h1 {
+    font-size: 4em;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  .bienvenida {
+    flex-direction: column-reverse;
+    padding-top: 80px;
+  }
+}
+
 /* SECCION 2 (SOBRE MI) */
 .s2 {
   background-color: #853ead;
@@ -218,8 +236,27 @@ img {
   height: 64px;
 }
 
+.lenguaje h4 {
+  display: none;
+}
+
 .custom-shape-divider-top-1628539384 .shape-fill {
   fill: #853ead;
+}
+
+@media only screen and (max-width: 480px) {
+  .lenguajes {
+    flex-direction: column;
+  }
+
+  .lenguaje h4 {
+    color: #494949;
+    display: block;
+  }
+
+  .logo-lenguaje {
+    display: none;
+  }
 }
 
 /* SECCION 3 (TRABAJOS) */
@@ -268,25 +305,150 @@ img {
   opacity: 1;
 }
 
+@media only screen and (max-width: 560px) {
+  .paginas {
+    flex-direction: column;
+  }
+}
+
 /* SECCION 4 (REDES SOCIALES) */
 .s4 h2 {
   text-align: center;
-  margin-top: 30px;
-}
-
-.redes {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.red {
-  display: inline;
+  margin-top: 50px;
 }
 
 .cuadro {
   width: 70px;
   height: 70px;
   background-color: red;
+}
+
+.redes {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.red a {
+  background-color: #9647c4;
+  border-radius: 10px;
+  border: 1px solid #c9c9c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.red:hover {
+  cursor: pointer;
+}
+
+.red h4 {
+  margin-bottom: 0;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.red i {
+  font-size: 4em;
+  margin-right: 10px;
+  color: #fff;
+}
+.redes {
+  display: flex;
+  justify-content: center;
+}
+
+.correo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SECCION 5 (CONTACTO) */
+.s5 {
+  margin-top: 100px;
+}
+
+.s5 h2 {
+  text-align: center;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+input,
+textarea {
+  border-radius: 10px;
+  border-style: none;
+  padding: 15px;
+  margin: 5px;
+  border: 1px solid #c5c5c5;
+}
+
+.grupo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  width: 100%;
+}
+
+label {
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="submit"] {
+  padding: 10px 50px;
+  font-weight: 600;
+  font-family: "Merriweather Sans", sans-serif;
+  color: #fff;
+  background-color: #242424;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.enviar {
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .grupo {
+    flex-direction: column;
+  }
+
+  input {
+    margin-bottom: 20px;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: #853ead;
+  color: #fff;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
 }
